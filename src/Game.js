@@ -13,8 +13,8 @@ window.addEventListener("load", () => {
   let gameOver = false;
   let gameWin = false;
 
-  let gameOverSound = new Audio("../sounds/gameOver.wav");
-  let gameWinSound = new Audio("../sounds/gameWin.wav");
+  let gameOverSound = new Audio("./sounds/gameOver.wav");
+  let gameWinSound = new Audio("./sounds/gameWin.wav");
 
   const animate = () => {
     tileMap.draw(c);

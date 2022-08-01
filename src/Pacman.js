@@ -16,9 +16,12 @@ export default class Pacman {
     this.requestMovingDirection = null;
     window.addEventListener("keydown", this.#keydown);
 
-    this.wakaSound = new Audio("../sounds/waka.wav");
-    this.powerSound = new Audio("../sounds/power_dot.wav");
-    this.eatGhostSound = new Audio("../sounds/eat_ghost.wav");
+    this.wakaSound = new Audio();
+    this.wakaSound.src = "./sounds/waka.wav";
+    this.powerSound = new Audio();
+    this.powerSound.src = "./sounds/power_dot.wav";
+    this.eatGhostSound = new Audio();
+    this.powerSound.src = "./sounds/eat_ghost.wav";
 
     this.pacmanAnimationTimer = null;
     this.pacmanAnimationTimerDefault = 10;
@@ -82,16 +85,16 @@ export default class Pacman {
 
   #loadPacmanImage() {
     const pacmanImage0 = new Image();
-    pacmanImage0.src = "../images/pac0.png";
+    pacmanImage0.src = "./images/pac0.png";
 
     const pacmanImage1 = new Image();
-    pacmanImage1.src = "../images/pac1.png";
+    pacmanImage1.src = "./images/pac1.png";
 
     const pacmanImage2 = new Image();
-    pacmanImage2.src = "../images/pac2.png";
+    pacmanImage2.src = "./images/pac2.png";
 
     const pacmanImage3 = new Image();
-    pacmanImage3.src = "../images/pac1.png";
+    pacmanImage3.src = "./images/pac1.png";
 
     this.images = [pacmanImage0, pacmanImage1, pacmanImage2, pacmanImage3];
   }
