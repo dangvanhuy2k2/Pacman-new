@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    * {
+      padding: 0;
+      margin: 0;
+      box-sizing: border-box;
+    }
+    canvas {
+      box-shadow: 10px 10px 20px black;
+    }
+    h1 {
+      text-align: center;
+      font-family: comic sans Ms;
+      color: lightgrey;
+      margin-bottom: 10px;
+    }
+    body {
+      margin-top: 30px;
+      display: flex;
+      justify-content: center;
+      height: 100vh;
+      overflow: hidden;
+      background: linear-gradient(
+        0deg,
+        rgb(17, 51, 161) 50%,
+        rgb(34, 195, 96) 100%
+      );
+    }
+  </style>
+  <body>
+    <div>
+      <h1>Pac man</h1>
+      <canvas id="canvas"></canvas>
+      <script type="module" src="./src/Game.js"></script>
+    </div>
+  </body>
+</html>
